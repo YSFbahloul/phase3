@@ -7,9 +7,9 @@ CORS(app)
 
 # Update MySQL connection details
 app.config['MYSQL_USER'] = 'root'  # MySQL username
-app.config['MYSQL_PASSWORD'] = 'Abdo980756@'  # MySQL password
-app.config['MYSQL_DATABASE'] = 'toolsdatabase'  # MySQL database name
-app.config['MYSQL_HOST'] = 'db'  # MySQL container name or Docker network name
+app.config['MYSQL_PASSWORD'] = 'password'  # MySQL password
+app.config['MYSQL_DATABASE'] = 'database'  # MySQL database name
+app.config['MYSQL_HOST'] = 'app-db-mysql-srv'  # MySQL container name or Docker network name
 
 mysql = MySQL(app)
 
